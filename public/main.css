@@ -1,0 +1,21 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,234,255,1) 0%, rgba(145,187,148,1) 100%, rgba(0,202,248,1) 100%);
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1,label {
+    color: black;
+}
+
+.alert {
+    color: tomato;
+}
+
+.center {
+
+    margin-top: 200px;
+    margin-left: 550px;
+
+}
+
