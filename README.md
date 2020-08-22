@@ -16,21 +16,21 @@ Routes:-
 
 /delete - To delete a particular item from the database.  
 
-/belowlist - To display the items that are only below their respective limits.  
+/belowlist - To display the items that are only below their respective limits.    
 
 
-Models Used:- 
+Models Used:-   
 
-Items {
-          name: {
-        type: String,
-        required: true
-          },
-    quantity: {
-        type: Number,
-        required: true
-          },
-    limit: {
-        type: Number
-         }
-}
+Items {  
+          name: {  
+        type: String,  
+        required: true  
+          },  
+    quantity: {  
+        type: Number,  
+        required: true  
+          },  
+    limit: {  
+        type: Number  
+         }  
+}  
