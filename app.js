@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const adminController = require('./controller/admin');
-const MONGODB_URI = 'mongodb+srv://Arjun:arjun31@cluster0-ptp5p.mongodb.net/macvita?retryWrites=true&w=majority';
+const MONGODB_URI = 'mongodb+srv://username:password@cluster0-ptp5p.mongodb.net/db_name?retryWrites=true&w=majority';
 
 const app = express();
 
