@@ -1,5 +1,16 @@
 const Items = require('../models/items');
 
+const nodemailer = require('nodemailer');
+const sendgridTransport = require('nodemailer-sendgrid-transport');
+
+const transporter = nodemailer.createTransport(
+    sendgridTransport({
+        auth: {
+            api_key: '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'
+            }
+        })
+    );
+
 exports.getindex = (req,res,next) =>{
     res.render('index');
 }
@@ -137,4 +148,17 @@ exports.getbelowlimit = (req,res,next) =>{
     .catch(err =>{
         console.log(err);
     });
+}
+
+exports.sendEmail = (req,res,next) =>{
+
+    transporter.sendMail({
+        to: 'arjunbhut1@gmail.com',
+        subject: 'TEST-MAIL',
+        html: `
+        
+            <p>You have recieved the test email</p>
+        `
+    });
+    res.redirect('/');
 }
