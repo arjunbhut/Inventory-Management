@@ -1,5 +1,5 @@
 # Inventory-Management
-NodeJS-ExpressJS-MongoDB-Mongoose-EJS-Javascript 
+NodeJS-ExpressJS-MongoDB-Mongoose-EJS-Javascript. 
 
 This project is built with the help of the above mentioned Technologies.
 
@@ -16,7 +16,9 @@ Routes:-
 
 /delete - To delete a particular item from the database.  
 
-/belowlist - To display the items that are only below their respective limits.    
+/belowlist - To display the items that are only below their respective limits. 
+
+/email  - To send the test email (Dummy data entered, can work with real time data by extracting from request body)
 
 
 Models Used:-   
